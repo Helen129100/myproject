@@ -1,0 +1,398 @@
+*{
+ margin:  0;
+    padding: 0;
+}
+
+header{
+
+nav{
+    
+    width: 100%;
+    margin: 0 !important;
+	
+    background : rgb(0,110,166)!important;
+
+	height: 50px;
+    .container{
+        display: flex;
+        .logo{
+			line-height: 50px;
+			a{
+				color: white;
+				text-decoration: none;
+			}
+		}
+		.more_inf{
+			line-height: 50px;
+			color: white;
+			border: solid 1px #fff;
+		}
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            width: auto;
+            margin-right: 2%;
+        }
+    } 
+    }
+   
+    
+}
+.main-photo{
+	.opacity-photo{
+		width: 100%;
+		height: 600px;
+		background-color: rgba($color: #000000, $alpha: 1.0);
+		z-index: 2;
+		img{
+    width: 100%;
+	height: 600px;
+}}
+
+}
+}
+main{
+	
+	background-color: rgb(255, 255, 255);
+}
+.link-other_pages{
+	.other_pages-items{
+		display: flex;
+		height: 300px;
+		margin-top: 4%;
+		margin-bottom: 4%;
+		justify-content: space-around;
+		.first_pages{
+			width: 50%;
+			display: flex;
+			a{
+				width: 100%;
+			img{
+				width: 100%;
+				border-radius: 5%;
+				height: 100%;
+			}}
+			.first_pages_description{
+				color: white;
+				font-size: 2em;
+				position: absolute;
+				transform: translateY(140px);
+				padding: 2%;text-decoration: none;
+			}
+
+		}
+		.second_pages{
+			width: 22%;
+			display: flex;
+			
+			img{
+				width: 100%;
+				border-radius: 5%;
+				height: 100%
+			}
+			.second_pages_description{
+
+				color: white;
+				font-size: 2em;
+				position: absolute;
+				transform: translateY(140px);
+				padding: 2%;
+				text-decoration: none;
+				div{
+					width: 100%;
+				}
+			}
+			}
+		}
+	}
+
+
+
+.time-airplane{
+    .container{
+        .line{
+            
+            input{
+                margin-top: 100px;
+                width: 100%;
+               
+                
+                
+            }
+        }
+    }
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+   
+    
+    text-align: center;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+  
+    color: #fff;
+  }
+
+  $number-of-options: 5;
+
+#form-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.plane-ln{
+    vertical-align: middle;
+    position: absolute;
+    transform: translateX(-103px);
+    /* transform: translateY(-20px); */
+    width: 230px;
+    z-index: 2;
+	top :-55px;
+}
+.container-line{
+	width: 900px;
+	margin: auto;
+	padding: 3%;
+	
+}
+  #tab1, #tab2, #tab3,#tab4, #tab5 {
+	display: none;
+	text-align: justify;
+  }
+  #tab1.active{
+	display: block;
+	.infomation-item-block1{
+		display: flex;
+		img{
+		width: 50%;
+		margin-right:20px ;
+background: #4caf50;
+	}
+	}
+	
+	.infomation-item-block2{
+		display: flex;
+		width: 100%;
+		img{
+			width: 50%;
+			margin-left:20px ;}
+			
+	}
+  }
+  #tab2.active{
+	display: block;
+  }
+  #tab3.active{
+	display: block;
+  } #tab4.active{
+	display: block;
+  }
+  #tab5.active{
+	display: block;
+  }
+#form-title{
+	color: rgba(0, 0, 0, 0.829);
+} 
+ 
+form {
+    margin-bottom: 40px;
+
+	width: 500%;
+	max-width: 1000px;
+	#form-title {
+		margin-top: 0;
+		font-weight: 400;
+		text-align: center;
+	}
+	#debt-amount-slider {
+		display: flex;
+		flex-direction: row;
+		align-content: stretch;
+		position: relative;
+		width: 100%;
+		height: 50px;
+		user-select: none;
+		&::before {
+			content: " ";
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			width: calc(100% * (#{$number-of-options - 1} / #{$number-of-options}));
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #000;
+		}
+		input, label {
+			box-sizing: border-box;
+			flex: 1;
+			user-select: none;
+			cursor: pointer;
+            background: url(../img/pngwing.com.png) no-repeat scroll 7px 7px;
+padding-left:30px;
+		}
+		label {
+			display: inline-block;
+			position: relative;
+			width: 20%;
+			height: 100%;
+			user-select: none;
+			&::before {
+				content: attr(data-debt-amount);
+				position: absolute;
+				left: 50%;
+				padding-top: 10px;
+				transform: translate(-50%, 45px);
+				font-size: 14px;
+				letter-spacing: 0.4px;
+				font-weight: 400;
+				white-space: nowrap;
+				opacity: 0.85;
+				transition: all 0,2s ease-in-out;
+			}
+			&::after {
+				content: " ";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 30px;
+				height: 30px;
+				border: 2px solid #000;
+				background: #fff;
+				border-radius: 50%;
+				pointer-events: none;
+				user-select: none;
+				z-index: 1;
+				cursor: pointer;
+				transition: all 0.2s ease-in-out;
+			}
+			&:hover::after {
+				transform: translate(-50%, -50%) scale(1.25);
+			}
+		}
+		input {
+			display: none;
+			&:checked {
+				+ label::before {
+					font-weight: 800;
+					opacity: 1;
+				}
+				+ label::after {
+					border-width: 4px;
+					transform: translate(-50%, -50%) scale(0.75);
+				}
+				~ #debt-amount-pos {
+					opacity: 1;
+				}
+				@for $i from 1 through $number-of-options {
+					&:nth-child(#{$i * 2 - 1}) ~ #debt-amount-pos {
+						left: #{($i * 20%) - 10%};
+					}
+				}
+			}
+		}
+		#debt-amount-pos {
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 12px;
+			height: 12px;
+			background: #000;
+			border-radius: 50%;
+			transition: all 0.15s ease-in-out;
+			transform: translate(-50%, -50%);
+			border: 2px solid #fff;
+			opacity: 0;
+			z-index: 2;
+		}
+	}
+	&:valid {
+		#debt-amount-slider {
+			input {
+				+ label::before {
+					transform: translate(-50%, 45px) scale(0.9);
+					transition: all 1.50s linear;
+				}
+				&:checked + label::before {
+					transform: translate(-50%, 45px) scale(1.1);
+					transition: all 1.50s linear;
+				}
+			}
+		}
+	}
+	& + button {
+		display: block;
+		position: relative;
+		margin: 56px auto 0;
+		padding: 10px 20px;
+		appearance: none;
+		transition: all 1.15s ease-in-out;
+		font-family: inherit;
+		font-size: 24px;
+		font-weight: 600;
+		background: #fff;
+		border: 2px solid #000;
+		border-radius: 8px;
+		outline: 0;
+		user-select: none;
+		cursor: pointer;
+		&:hover {
+			// transform: scale(1.1);
+			background: #000;
+			color: #fff;
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+		&:focus {
+			background: #4caf50;
+			border-color: #4caf50;
+			color: #fff;
+			pointer-events: none;
+			&::before {
+				animation: spin 1s linear infinite;
+			}
+		}
+		&::before {
+			display: inline-block;
+			width: 0;
+			opacity: 0;
+			content: "\f3f4";
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 900;
+			margin-right: 0;
+			transform: rotate(0deg);
+		}
+	}
+	&:invalid + button {
+		pointer-events: none;
+		opacity: 1.25;
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		width: 24px;
+		opacity: 1;
+		margin-right: 12px;
+	}
+	to {
+		transform: rotate(360deg);
+		width: 24px;
+		opacity: 1;
+		margin-right: 12px;
+	}
+}
+footer{
+	background-color:rgb(0,110,166) ;
+	height: 50px;
+}
