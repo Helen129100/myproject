@@ -5,7 +5,6 @@
 
 header nav {
   width: 100%;
-  margin: 0 !important;
   background: rgb(0, 110, 166) !important;
   height: 50px;
 }
@@ -146,11 +145,12 @@ main {
 }
 #tab1.active .infomation-item-block1 {
   display: flex;
+  margin-bottom: 4%;
 }
 #tab1.active .infomation-item-block1 img {
   width: 50%;
   margin-right: 20px;
-  background: #4caf50;
+  height: 350px;
 }
 #tab1.active .infomation-item-block2 {
   display: flex;
@@ -159,14 +159,28 @@ main {
 #tab1.active .infomation-item-block2 img {
   width: 50%;
   margin-left: 20px;
+  height: 350px;
 }
 
 #tab2.active {
   display: block;
 }
+#tab2.active .block1 img {
+  width: 100%;
+}
 
 #tab3.active {
   display: block;
+}
+#tab3.active .block1 img {
+  width: 100%;
+}
+#tab3.active .block2 {
+  display: flex;
+}
+#tab3.active .block2 img {
+  width: 50%;
+  margin-right: 1%;
 }
 
 #tab4.active {
@@ -372,6 +386,14 @@ form:invalid + button {
     margin-right: 12px;
   }
 }
+.page_1_main {
+  margin: 3%;
+}
+.page_1_main img {
+  width: 300px;
+  height: 300px;
+}
+
 footer {
   background-color: rgb(0, 110, 166);
   height: 50px;
