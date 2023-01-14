@@ -7,11 +7,6 @@ html, body {
   overflow-x: hidden;
 }
 
-.container {
-  min-width: 1200px;
-  width: 100%;
-}
-
 header {
   display: block;
 }
@@ -67,14 +62,14 @@ header nav .container ul li {
   height: 600px;
 }
 .main-photo .main-text {
+  color: white;
   position: absolute;
   z-index: 4;
   min-width: 50px;
-  width: 743px;
-  font-size: 50px;
-  margin-left: 3%;
+  width: 50%;
+  font-size: 3.3vw;
   text-transform: uppercase;
-  transform: translateY(-500px);
+  top: 20%;
 }
 
 main {
@@ -82,6 +77,7 @@ main {
 }
 
 .link-other_pages .other_pages-items {
+  max-width: 100vW;
   display: flex;
   height: 300px;
   margin-top: 4%;
@@ -93,19 +89,21 @@ main {
 }
 .link-other_pages .other_pages-items .first_pages a {
   width: 100%;
+  display: flex;
+  justify-content: left;
+  color: white;
+  font-size: 2.5vW;
+  align-items: end;
 }
 .link-other_pages .other_pages-items .first_pages a img {
   width: 100%;
-  border-radius: 5%;
+  border-radius: 3%;
   height: 100%;
 }
-.link-other_pages .other_pages-items .first_pages .first_pages_description {
-  color: white;
-  font-size: 2em;
+.link-other_pages .other_pages-items .first_pages a span {
   position: absolute;
-  transform: translateY(140px);
-  padding: 2%;
-  text-decoration: none;
+  margin-bottom: 1%;
+  margin-left: 2%;
 }
 .link-other_pages .other_pages-items .second_pages {
   width: 22%;
@@ -113,7 +111,7 @@ main {
 }
 .link-other_pages .other_pages-items .second_pages img {
   width: 100%;
-  border-radius: 5%;
+  border-radius: 3%;
   height: 100%;
 }
 .link-other_pages .other_pages-items .second_pages .second_pages_description {
@@ -556,16 +554,108 @@ form:invalid + button {
 }
 
 footer {
-  display: flex;
+  padding: 3% 0;
+  height: 100%;
+  color: white;
   background-color: rgb(0, 110, 166);
-  height: 50px;
 }
-footer .footer_button_vk {
-  background-color: #fff;
+footer .container {
   display: flex;
-  position: absolute;
-  width: 20px;
+  justify-content: space-around;
 }
-footer .footer_button_vk img {
+footer .container .social_media_history-museum {
+  width: 20%;
+}
+footer .container .social_media_history-museum .social_media_history-museum-header {
+  font-size: 1.6vW;
+  margin-bottom: 3%;
+}
+footer .container .social_media_history-museum .footer_button_vk {
+  margin-bottom: 5%;
+}
+footer .container .social_media_history-museum .footer_button_vk a {
+  color: white;
+  display: flex;
+}
+footer .container .social_media_history-museum .footer_button_vk .footer_button_vk-bacground {
+  display: flex;
+  background-color: #fff;
+  margin-right: 5%;
+  border-radius: 50%;
+}
+footer .container .social_media_history-museum .footer_button_vk .footer_button_vk-bacground img {
   width: 30px;
+}
+footer .container .social_media_history-museum .footer_button_insta {
+  margin-bottom: 5%;
+}
+footer .container .social_media_history-museum .footer_button_insta a {
+  color: white;
+}
+footer .container .social_media_history-museum .footer_button_insta img {
+  width: 30px;
+  margin-right: 5%;
+}
+footer .container .footer_main_inf {
+  width: 30%;
+}
+footer .container .footer_main_inf .footer_main_inf-header {
+  font-size: 1.6vW;
+  margin-bottom: 3%;
+}
+footer .container .admin {
+  width: 17%;
+}
+
+.demo {
+  width: 80%;
+  margin: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 320px;
+  height: 180px;
+  margin: 2px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper a {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+
+.personality-main {
+  margin-top: 20px;
+}
+.personality-main .personality_first-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.personality-main .personality_first-block .personality_first-block-photo {
+  width: 50%;
+}
+.personality-main .personality_first-block .personality_first-block-photo img {
+  width: 100%;
+}
+.personality-main .personality_first-block .personality_first-block-description {
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */
